@@ -1,6 +1,6 @@
-var pastTime = $("#hour-9")
-var currentTime = $("#hour-10")
-var futureTime = $("hour-11")
+var pastTime = $("#hour-past")
+var currentTime = $("#hour-current")
+var futureTime = $("hour-future")
 
 //Adding timezone info for calendar
 var date = new Date();
