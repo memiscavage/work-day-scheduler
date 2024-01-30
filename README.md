@@ -24,3 +24,9 @@ THEN the text for that event is saved in local storage \
 \
 WHEN I refresh the page \
 THEN the saved events persist 
+
+### Links
+https://memiscavage.github.io/work-day-scheduler/ -- Link to live site \
+https://github.com/memiscavage/work-day-scheduler -- Link to GitHub repo
+
+### References
