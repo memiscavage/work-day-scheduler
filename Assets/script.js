@@ -1,11 +1,13 @@
 var pastTime = $("#hour-past")
 var currentTime = $("#hour-current")
 var futureTime = $("hour-future")
+var workdayHours = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"]
 
 //Adding timezone info for calendar
 var date = new Date();
 const centralTime = date.toLocaleString("en-US", {timeZone: "America/Chicago"})
 // console.log(date);
+$( "p" ).replaceWith(date);
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
