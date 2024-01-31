@@ -27,6 +27,9 @@ THEN the saved events persist
 
 ### Links
 https://memiscavage.github.io/work-day-scheduler/ -- Link to live site \
-https://github.com/memiscavage/work-day-scheduler -- Link to GitHub repo
+https://github.com/memiscavage/work-day-scheduler -- Link to GitHub repo \
+Assets/memiscavage.github.io_work-day-scheduler_.png -- Screenshot of website
 
 ### References
+https://api.jquery.com/ \
+https://day.js.org/docs/en/installation/installation 
