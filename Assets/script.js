@@ -3,7 +3,7 @@
 // in the html.
 
 $(function () {
-  //This adds the date and time to the top of the scheduler
+  // TODO: Add code to display the current date in the header of the page.
    function displayDate() {
     const date = new Date();
     const centralTime = date.toLocaleString("en-US", {timeZone: "America/Chicago"})
@@ -19,10 +19,11 @@ $(function () {
   $( ".saveBtn" ).on( "click", function() {
     var timeBlockId = $( this ).parent().attr("id");
     var textArea = $(this).siblings("textarea").val();
-    localStorage.setItem(timeBlockId, textArea);
+    var saveItem = localStorage.setItem(timeBlockId, textArea);
     alert("Your text has been saved")
     //console.log(timeBlockId)
-    localStorage.getItem(timeBlockId, textArea);
+   
+  localStorage.getItem(saveItem, textArea);
   } );
   // TODO: Add code to apply the past, present, or future class to each time
   function timeblockChange() {
@@ -43,6 +44,6 @@ $(function () {
 
   setInterval(timeblockChange, 10000); //This is to continue to check current time for color coding
 
-  // TODO: Add code to display the current date in the header of the page.
+
   
 });
