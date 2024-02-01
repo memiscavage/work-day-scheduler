@@ -5,7 +5,7 @@
 $(function () {
   //This adds the date and time to the top of the scheduler
    function displayDate() {
-    var date = new Date();
+    const date = new Date();
     const centralTime = date.toLocaleString("en-US", {timeZone: "America/Chicago"})
       $( "p" ).replaceWith(date);
     }
@@ -22,6 +22,7 @@ $(function () {
     localStorage.setItem(timeBlockId, textArea);
     alert("Your text has been saved")
     //console.log(timeBlockId)
+    localStorage.getItem(timeBlockId, textArea);
   } );
   // TODO: Add code to apply the past, present, or future class to each time
   function timeblockChange() {
@@ -43,5 +44,5 @@ $(function () {
   setInterval(timeblockChange, 10000); //This is to continue to check current time for color coding
 
   // TODO: Add code to display the current date in the header of the page.
-  localStorage.getItem(textArea);
+  
 });
