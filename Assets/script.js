@@ -4,9 +4,9 @@
 
 $(function () {
   //This adds the date and time to the top of the scheduler
-    function displayDate() {
-      var date = new Date();
-      const centralTime = date.toLocaleString("en-US", {timeZone: "America/Chicago"})
+   function displayDate() {
+    var date = new Date();
+    const centralTime = date.toLocaleString("en-US", {timeZone: "America/Chicago"})
       $( "p" ).replaceWith(date);
     }
     displayDate();
@@ -20,7 +20,8 @@ $(function () {
     var timeBlockId = $( this ).parent().attr("id");
     var textArea = $(this).siblings("textarea").val();
     localStorage.setItem(timeBlockId, textArea);
-    console.log(timeBlockId)
+    alert("Your text has been saved")
+    //console.log(timeBlockId)
   } );
   // TODO: Add code to apply the past, present, or future class to each time
   function timeblockChange() {
