@@ -46,9 +46,9 @@ $(function () {
   // TODO: Add a listener for click events on the save button.
   // TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements.
   $( ".saveBtn" ).on( "click", function() {
-    var timeBlockId = $( this ).parent().attr("id");
+    var timeBlockId = $( this ).parent().attr("id"); // Allowed for all ids for time blocks to be grouped in one var
     var textArea = $(this).siblings("textarea").val();
-    saveItem = localStorage.setItem(timeBlockId, textArea);
+    saveItem = localStorage.setItem(timeBlockId, textArea); // Allowed for text saved in any timeblock to be saved in local storage
     alert("Your text has been saved")
     //console.log(timeBlockId)
    
