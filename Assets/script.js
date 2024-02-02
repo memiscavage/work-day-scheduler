@@ -19,11 +19,11 @@ $(function () {
   $( ".saveBtn" ).on( "click", function() {
     var timeBlockId = $( this ).parent().attr("id");
     var textArea = $(this).siblings("textarea").val();
-    var saveItem = localStorage.setItem(timeBlockId, textArea);
+    saveItem = localStorage.setItem(timeBlockId, textArea);
     alert("Your text has been saved")
     //console.log(timeBlockId)
    
-  localStorage.getItem(saveItem, textArea);
+  localStorage.getItem(timeBlockId);
   } );
   // TODO: Add code to apply the past, present, or future class to each time
   function timeblockChange() {
