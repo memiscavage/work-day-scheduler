@@ -2,7 +2,7 @@
 ## User story
 AS AN employee with a busy schedule \
 I WANT to add important events to a daily planner \
-SO THAT I can manage my time effectively \
+SO THAT I can manage my time effectively 
 
 ## Acceptance criteria
 GIVEN I am using a daily planner to create a schedule \
@@ -32,4 +32,5 @@ Assets/memiscavage.github.io_work-day-scheduler_.png -- Screenshot of website
 
 ### References
 https://api.jquery.com/ \
-https://day.js.org/docs/en/installation/installation 
+https://day.js.org/docs/en/installation/installation \
+Received assistance from TA Walter Perry and classmate Victoria Greenwood on lines 17-42 on script.js 
