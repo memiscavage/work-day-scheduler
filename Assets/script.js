@@ -13,6 +13,35 @@ $(function () {
     
     setInterval(displayDate, 1000);
 
+  // This allows local storage to be shown
+   let textarea9 = document.getElementById("hour-9");
+   textarea9.children[1].value = localStorage.getItem("hour-9") || 'no events scheduled';
+
+   let textarea10 = document.getElementById("hour-10");
+   textarea10.children[1].value = localStorage.getItem("hour-10") || 'no events scheduled';
+
+   let textarea11 = document.getElementById("hour-11");
+   textarea11.children[1].value = localStorage.getItem("hour-11") || 'no events scheduled';
+
+   let textarea12 = document.getElementById("hour-12");
+   textarea12.children[1].value = localStorage.getItem("hour-12") || 'no events scheduled';
+
+   let textarea13 = document.getElementById("hour-13");
+   textarea13.children[1].value = localStorage.getItem("hour-13") || 'no events scheduled';
+
+   let textarea14 = document.getElementById("hour-14");
+   textarea14.children[1].value = localStorage.getItem("hour-14") || 'no events scheduled';
+
+   let textarea15 = document.getElementById("hour-15");
+   textarea15.children[1].value = localStorage.getItem("hour-15") || 'no events scheduled';
+
+   let textarea16 = document.getElementById("hour-16");
+   textarea16.children[1].value = localStorage.getItem("hour-16") || 'no events scheduled';
+
+   let textarea17 = document.getElementById("hour-17");
+   textarea17.children[1].value = localStorage.getItem("hour-17") || 'no events scheduled';
+
+
 
   // TODO: Add a listener for click events on the save button.
   // TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements.
@@ -23,7 +52,6 @@ $(function () {
     alert("Your text has been saved")
     //console.log(timeBlockId)
    
-  localStorage.getItem(timeBlockId);
   } );
   // TODO: Add code to apply the past, present, or future class to each time
   function timeblockChange() {
@@ -43,7 +71,5 @@ $(function () {
   timeblockChange();
 
   setInterval(timeblockChange, 10000); //This is to continue to check current time for color coding
-
-
   
 });
